@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(Fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(Fonts/GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(Fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: "Tesla";
+    src: url(Fonts/TESLA.ttf);
+}
+
+@font-face {
+    font-family: "CyberTruck";
+    src: url(Fonts/Cyber\ gloom.ttf);
+}
+
+:root {
+    /*VARIAVEIS*/
+    --BG-HOVER: #f2f1f12c;
+}
+
+body {
+    width: 100%;
+}
+
+.container_img .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.container_img .menu .logo {
+    font-family: "Tesla";
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.container_img .menu .menu_lista {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    list-style-type: none;
+}
+
+.container_img .menu .menu_lista .menu_item {
+    list-style-type: none;
+    float: left;
+    padding: 0.5rem;
+}
+
+.container_img .menu .menu_lista .menu_item ul {
+    background-color: white;
+    width: 100vw;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.container_img .menu .menu_lista li a {
+    font-family: "GothamLight";
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+}
+
+.menu .menu_lista .menu_item .btn-hover:hover {
+    background-color: var(--BG-HOVER);
+}
+
+/*Estilo Submenu*/
+.menu .menu_lista li ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+/*Caixas*/
+.menu .menu_lista .menu_item ul .content_vehicle {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu .menu_lista .menu_item ul .content_vehicle .content_info h1 {
+    font-family: "GothamLight";
+}
+
+.menu .menu_lista .menu_item ul .content_vehicle .content_whell {
+    flex-direction: row;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.menu .menu_lista .menu_item ul .content_vehicle .content_whell a {
+    font-size: 0.7rem;
+    text-decoration: underline;
+    border: none;
+    padding-left: none;
+    padding-bottom: 2px;
+    color: #000;
+}
+
+/*Fim Caixas*/
+
+.menu .menu_lista .menu_item ul ul:hover {
+    width: 100%;
+    background-color: white;
+}
+
+.menu .menu_lista .menu_item ul img {
+    width: 190px;
+    height: 100px;
+}
+
+.menu li:hover ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin: auto;
+}
+
+.menu .menu_lista ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .container_extras a {
+    padding: 0 0.5rem;
+}
+
+.menu .container_extras a i {
+    color: white;
+}
+
+/*Estilo das Sections*/
+.container_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(Imagens/Homepage-Model-Y-Desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    z-index: 0;
+    display: grid;
+    place-items: center;
+}
+
+.content_card {
+    position: relative;
+    top: 0;
+    width: 530px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.container_img .content_card .content_items {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+}
+
+.container_img .content_card .content_items h1 {
+    text-align: center;
+    font-family: "GothamBold";
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+/*ESTILO UNICO H1 DA FONT CYBERTRUCK*/
+.container_img .content_card .content_items #CyberTruck {
+    font-family: "CyberTruck";
+    font-weight: lighter;
+    font-size: 8rem;
+    letter-spacing: -10px;
+}
+
+/*ESTILO UNICO DO H1 DO SOLAR PANELS*/
+.container_img .content_card .content_items #Solar {
+    color: white;
+}
+
+.container_img .content_card .content_items h4 {
+    text-align: center;
+    font-family: "GothamMedium";
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0.5rem 0;
+}
+
+.container_img .content_card .content_items p {
+    text-align: center;
+    font-family: "gothamLight";
+}
+
+/*ESTILO UNICO <A> DO CARD SOLAR*/
+.container_img .content_card .content_items p>#SolarPanels {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+    line-height: 1.5rem;
+}
+
+.container_img .content_card .content_btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.container_img .content_card .content_btn button {
+    width: 250px;
+    padding: 0.6rem 2rem;
+    margin: 0 1rem;
+    font-family: "GothamMedium";
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #000;
+    margin: auto;
+}
+
+.container_features {
+    padding: 1.5rem 0;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 0.3rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+.features p {
+    font-family: "GothamLight";
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.features p>a {
+    padding-bottom: 2px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.features p>a:hover {
+    transition: 0.2s all ease;
+    border-bottom: 2px solid white;
+}
+
+.contacts_itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 2rem;
+}
+
+.contacts_itens .itens_ a {
+    font-family: "gothamLight";
+    font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.1rem;
+    margin: 0.2rem 0.2rem;
+}
+
+.menuSidebar {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .container_img .menu {
+        padding: 0.6rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container_img .menu .menu_lista {
+        display: none;
+    }
+
+    .container_img .menu .container_extras {
+        display: none;
+    }
+
+    .container_img {
+        background-image: url(BackGround-Mobile/Homepage-Model-Y-Mobile.png);
+        height: 700px;
+    }
+
+    .container_img .content_card {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .container_img .content_card .content_btn {
+        flex-direction: column;
+    }
+
+    .container_img .content_card .content_btn button {
+        width: 90vw;
+        margin: 0.5rem 0;
+    }
+
+    .container_img .content_card .content_items #CyberTruck {
+        font-size: 5rem;
+    }
+
+    footer .container_features {
+        margin-bottom: 6rem;
+    }
+
+    footer .container_features .features {
+        width: 90%;
+    }
+
+    footer .container_features .features p {
+        text-align: center;
+    }
+
+    footer .contacts_itens {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 1rem 0;
+        border-top: 0.01px solid white;
+    }
+
+    footer .contacts_itens .itens_ {
+        padding: 0.3rem 0;
+    }
+}
