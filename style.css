@@ -419,6 +419,7 @@ footer {
     #menu {
         position: absolute;
         width: 100%;
+        z-index: 1000;
     }
 
     #menu li {
@@ -431,6 +432,7 @@ footer {
     }
 
     #menu li ul li {
+        padding: 0;
         height: auto;
         font-size: 1rem;
         list-style-type: none;
