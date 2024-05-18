@@ -41,3 +41,21 @@ window.onload = function () {
     }
   }
 }
+//MenuSidebar
+function toggleMenu() {
+  var menu = document.getElementById('menu');
+  if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+  } else {
+      menu.style.display = 'block';
+      menu.style.animation = 'slideIn 0.3s forwards';
+  }
+}
+
+document.addEventListener('click', function(event) {
+  var isClickInside = document.querySelector('.containerMenu').contains(event.target);
+
+  if (!isClickInside) {
+      document.getElementById('menu').style.display = 'none';
+  }
+});
