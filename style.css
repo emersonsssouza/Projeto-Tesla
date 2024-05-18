@@ -348,6 +348,7 @@ footer {
 
     .contentMenu {
         background-color: #000;
+        margin: 0 1rem;
     }
 
     .contentMenu h1 {
@@ -356,12 +357,14 @@ footer {
     }
 
     .contentMenuButton {
-        padding: 0.1rem 1rem;
+        padding: 0.3rem 1rem;
         font-family: "Arial";
         font-size: 0.9rem;
-        background-color: #000;
+        background-color: #000000a1;
         color: #fff;
         border: 1px solid #fff;
+        border-radius: 5px;
+        margin: 0 1rem;
     }
 
     #menu {
@@ -380,7 +383,8 @@ footer {
 
     #menu li {
         color: #000;
-        padding: 10px;
+        font-size: 1.5rem;
+        padding: 20px;
         cursor: pointer;
         font-family: "Arial";
     }
@@ -424,6 +428,21 @@ footer {
     #menu ul {
         position: relative;
         left: 0;
+    }
+
+    #menu li ul li {
+        height: auto;
+        font-size: 1rem;
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu li ul li img {
+        width: 200px;
+        height: 100px;
     }
 
 
