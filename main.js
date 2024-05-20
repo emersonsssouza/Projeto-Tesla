@@ -23,21 +23,21 @@ window.onload = function () {
   if (screenWidth <= 450) {
     for (let i = 0; i < sections.length; i++) {
       sections[1].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-Model-3-Mobile-LHD-v2.png')";
+        "url('BG_Mobile/Homepage-Model-3-Mobile-LHD-v2.png')";
       sections[2].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-Model-X-Mobile-LHD_001.png')";
+        "url('BG_Mobile/Homepage-Model-X-Mobile-LHD_001.png')";
       sections[3].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-Model-S-Mobile-LHD-6.22.png')";
+        "url('BG_Mobile/Homepage-Model-S-Mobile-LHD-6.22.png')";
       sections[4].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-Cybertruck-Mobile.png')";
+        "url('BG_Mobile/Homepage-Cybertruck-Mobile.png')";
       sections[5].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-SolarPanels-01-Mobile.png')";
+        "url('BG_Mobile/Homepage-SolarPanels-01-Mobile.png')";
       sections[6].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-SolarRoof-Mobile.png')";
+        "url('BG_Mobile/Homepage-SolarRoof-Mobile.png')";
       sections[7].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-Powerwall-01-Mobile.png')";
+        "url('BG_Mobile/Homepage-Powerwall-01-Mobile.png')";
       sections[8].style.backgroundImage =
-        "url('BackGround-Mobile/Homepage-Accessories-Mobile.png')";
+        "url('BG_Mobile/Homepage-Accessories-Mobile.png')";
     }
   }
 }

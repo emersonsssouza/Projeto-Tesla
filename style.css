@@ -444,86 +444,6 @@ footer {
         right: 0;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .container_img .menu {
         display: none;
         position: none;
@@ -542,7 +462,7 @@ footer {
     }
 
     .container_img {
-        background-image: url(BackGround-Mobile/Homepage-Model-Y-Mobile.png);
+        background-image: url(BG_Mobile/Homepage-Model-Y-Mobile.png);
         height: 700px;
     }
 
